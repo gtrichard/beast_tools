@@ -45,11 +45,11 @@ fi
 set -Eeuo pipefail
 
 (
-    head -n 149 < main.js
+    head -n 149 < $arg_i/main.js
     echo -n 'json = '
-    cat data.json
+    cat $arg_i/data.json
     echo ';'
-    tail -n +156 main.js | awk 'NR != 107'
-) > main-new.js
+    tail -n +156 $arg_i/main.js | awk 'NR != 107'
+) > $arg_i/main-new.js
 
-sed -e 's/main\.js/main-new.js/' < index.html > index-new.html
+sed -e 's/main\.js/main-new.js/' < $arg_i/index.html > $arg_i/index-new.html
