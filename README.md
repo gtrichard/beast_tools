@@ -9,6 +9,8 @@ BEAST Tools - various scripts to help with BEAST Phylodynamic Analyses
 
 **spread3_rendering_fixer.sh**: Command Line script that takes as input a SpreaD3 output renderer folder to fix the files so that SpreaD3 loads properly in recent versions of web browsers like Firefox.
 
+**markov_jumps_plotter.R**: Rscript that should be opened with RStudio, takes as input the Markov Jumps values directly copied from Tracer (3 columns) and pasted and saved as a tab-delimited text file to make a customisable heatmap plot.
+
 ## Installation
 
 You can git clone this repository or click "<> Code > Download Zip" and extract it somewhere easily accessible to launch the scripts from the extract folder.
